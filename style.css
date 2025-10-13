@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 70px 60px 1fr 70px;
+  grid-template-areas:
+    "main-nav main-nav"
+    "banner banner"
+    "section section"
+    "offer offer";
+    padding: 20px;
+  gap: 10px;
+}
+
+.main-nav {
+  background-color: red;
+  grid-area: main-nav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-first{
+    display: flex;
+    gap: 50px;
+}
+
+.section {
+  background-color: pink;
+  grid-area: section;
+}
+
+.banner {
+  background-color: yellow;
+  grid-area: banner;
+}
+
+.offer {
+  background-color: royalblue;
+  grid-area: offer;
+}
