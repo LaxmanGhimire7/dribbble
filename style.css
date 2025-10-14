@@ -1,16 +1,16 @@
 @font-face {
-    font-family: texts;
-    src: url(./fonts/Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
+  font-family: texts;
+  src: url(./fonts/Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2);
 }
 
 @font-face {
-    font-family: secondtext;
-    src: url(./fonts/WFVisualSans-RegularText-46461986901f80620e484e70aa8cbb90ede25a01351d464819a4e47a3f38ea43.woff2);
+  font-family: secondtext;
+  src: url(./fonts/WFVisualSans-RegularText-46461986901f80620e484e70aa8cbb90ede25a01351d464819a4e47a3f38ea43.woff2);
 }
 
 @font-face {
-    font-family: dribble;
-    src: url(./alkaline-font-family-1760352227-0/AlkalineTest-Medium-BF676e1b6c9ed61.otf);
+  font-family: dribble;
+  src: url(./alkaline-font-family-1760352227-0/AlkalineTest-Medium-BF676e1b6c9ed61.otf);
 }
 
 * {
@@ -24,9 +24,9 @@ body {
   width: 100%;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 main {
@@ -40,7 +40,7 @@ main {
     "banner banner"
     "section section"
     "offer offer";
-    padding: 20px;
+  padding: 20px;
   gap: 10px;
 }
 
@@ -55,39 +55,39 @@ main {
   font-weight: 600;
 }
 
-.logo{
-    font-family: dribble;
-    font-size: 30px;
+.logo {
+  font-family: dribble;
+  font-size: 30px;
 }
 
-.nav-first{
-    display: flex;
-    gap: 90px;
+.nav-first {
+  display: flex;
+  gap: 90px;
 }
 
-.nav-second{
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
+.nav-second {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
-.last-nav{
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
+.last-nav {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
-.last-nav i{
-    font-size: 30px;
+.last-nav i {
+  font-size: 30px;
 }
 
-#upgrade{
-    background-color: black;
-    padding: 13px 25px;
-    color: white;
-    border-radius: 20px;
+#upgrade {
+  background-color: black;
+  padding: 13px 25px;
+  color: white;
+  border-radius: 20px;
 }
 
 .section {
@@ -98,6 +98,27 @@ main {
 .banner {
   background-color: yellow;
   grid-area: banner;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#pro {
+  margin-right: 10px;
+  background-color: black;
+  color: white;
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.banner button{
+  background: none;
+  border: none;
+  font-weight: bold;
 }
 
 .offer {
