@@ -44,8 +44,8 @@ main {
 }
 
 .main-nav {
-margin: 30px;
-margin-top: 20px;
+  margin: 30px;
+  margin-top: 20px;
   grid-area: main-nav;
   display: flex;
   justify-content: space-between;
@@ -54,7 +54,6 @@ margin-top: 20px;
   font-family: texts;
   font-size: 14px;
   font-weight: 600;
-  
 }
 
 .logo {
@@ -94,25 +93,33 @@ margin-top: 20px;
 
 .section {
   grid-area: section;
-  padding: 50px;
+  padding: 60px;
   font-family: texts;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
-.section-left h3{
+.section-left h3 {
   font-size: 48px;
-  
 }
 
-.section-left p{
+.section-left p {
   font-size: 16px;
   margin-top: 15px;
 }
 
-.section-right video{
-height: 400px;
 
+
+.section-right video {
+   position: absolute;
+  top: 50%;
+  right: 110px;
+  transform: translateY(-50%);
+  width: 650px;
+  height: 450px;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .banner {
@@ -122,10 +129,10 @@ height: 400px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: #F1F2F9;
+  background-color: #f1f2f9;
 }
 
-.banner p{
+.banner p {
   display: flex;
   align-items: center;
 }
@@ -141,7 +148,7 @@ height: 400px;
   font-weight: bold;
 }
 
-.banner button{
+.banner button {
   background: none;
   border: none;
   font-weight: bold;
