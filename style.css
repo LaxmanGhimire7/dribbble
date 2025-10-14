@@ -34,25 +34,27 @@ main {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 70px 60px 1fr 70px;
+  grid-template-rows: 90px 60px 1fr 70px;
   grid-template-areas:
     "main-nav main-nav"
     "banner banner"
     "section section"
     "offer offer";
-  padding: 20px;
   gap: 10px;
 }
 
 .main-nav {
+margin: 30px;
+margin-top: 20px;
   grid-area: main-nav;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   font-family: texts;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
+  
 }
 
 .logo {
@@ -91,8 +93,26 @@ main {
 }
 
 .section {
-  background-color: pink;
   grid-area: section;
+  padding: 50px;
+  font-family: texts;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-left h3{
+  font-size: 48px;
+  
+}
+
+.section-left p{
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.section-right video{
+height: 400px;
+
 }
 
 .banner {
@@ -102,6 +122,12 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  background-color: #F1F2F9;
+}
+
+.banner p{
+  display: flex;
+  align-items: center;
 }
 
 #pro {
