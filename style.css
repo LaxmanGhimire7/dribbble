@@ -13,6 +13,11 @@
   src: url(./alkaline-font-family-1760352227-0/AlkalineTest-Medium-BF676e1b6c9ed61.otf);
 }
 
+@font-face {
+  font-family: buttons;
+  src: url(./fonts/WFVisualSans-SemiBold-aa0e55353b6a1b897f76a0fcbf5561fa243ce1b8b9f6aebcb5a186f0536713b1.woff2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +32,14 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
 }
 
 main {
@@ -97,8 +110,17 @@ main {
   font-family: texts;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  /* border: 2px solid black; */
+  height: 90%;
 }
+
+.section-left {
+  width: 45%;
+}
+
+/* .section-right{
+   border: 2px solid black;
+} */
 
 .section-left h3 {
   font-size: 48px;
@@ -109,17 +131,81 @@ main {
   margin-top: 15px;
 }
 
-
-
 .section-right video {
-   position: absolute;
-  top: 50%;
-  right: 110px;
-  transform: translateY(-50%);
   width: 650px;
   height: 450px;
   border-radius: 20px;
   object-fit: cover;
+  margin-top: -40px;
+}
+
+.section-buttons {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: texts;
+}
+
+.section-button-inside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-button-inside p {
+  display: flex;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.section-button-inside #image-line {
+  background-color: #3a3546;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+}
+
+.section-button-inside p:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  transition: all ease 0.3s;
+}
+
+.search-input {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.search-input input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f3f3f6;
+  transition: all ease 0.3s;
+}
+
+.search-input i {
+  position: absolute;
+  right: 10px;
+  background-color: #ec5e95;
+  padding: 11px;
+  border-radius: 50%;
+  color: white;
+  font-size: 19px;
+}
+
+.search-input input:focus {
+  outline: none;
+  border: 2px solid #f7e9f7;
+  background-color: #fff;
 }
 
 .banner {
@@ -130,6 +216,8 @@ main {
   align-items: center;
   gap: 10px;
   background-color: #f1f2f9;
+  font-family: texts;
+  font-size: 14px;
 }
 
 .banner p {
@@ -141,7 +229,7 @@ main {
   margin-right: 10px;
   background-color: black;
   color: white;
-  padding: 2px 7px;
+  padding: 1.5px 5px;
   border-radius: 5px;
   font-size: 10px;
   text-transform: uppercase;
@@ -157,4 +245,17 @@ main {
 .offer {
   background-color: royalblue;
   grid-area: offer;
+  margin-top: -60px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer button{
+  background-color: #fff;
+}
+
+.offer-paragraph{
+  
 }

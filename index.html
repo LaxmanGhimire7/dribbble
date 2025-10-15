@@ -13,7 +13,7 @@
   <body>
     <main>
       <nav class="main-nav">
-        <nav class="nav-first">
+        <div class="nav-first">
           <a class="logo" href="">Dribble</a>
           <nav class="nav-second">
             <a href="">Explore</a>
@@ -21,7 +21,7 @@
             <a href="">Get Hired</a>
             <a href="">Blog</a>
           </nav>
-        </nav>
+        </div>
         <nav class="last-nav">
           <a id="upgrade" href="">Upgrade to Pro</a>
           <a href=""><i class="ri-chat-ai-line"></i></a>
@@ -46,18 +46,56 @@
             World’s Top Designers
           </h3>
           <p>
-            Explore work from the most talented and accomplished <br> designers ready
-            to take on your next project.
+            Explore work from the most talented and accomplished <br />
+            designers ready to take on your next project.
           </p>
+
+          <div class="section-buttons">
+            <button class="section-button-inside">
+              <p id="image-line"><i class="ri-image-line"></i>Shots</p>
+            </button>
+            <button class="section-button-inside">
+              <p><i class="ri-group-line"></i>Designers</p>
+            </button>
+            <button class="section-button-inside"><p>Services</p></button>
+          </div>
+
+          <!-- search part -->
+          <div class="search-input">
+            <input
+              type="search"
+              placeholder="What type of design are you interested in?"
+            />
+            <i class="ri-search-line"></i>
+          </div>
+
+          <div>
+            <h5>Popular:</h5>
+          </div>
         </div>
 
         <!-- IMAGE DIV / VIDEO DIV -->
-         <div class="section-right">
-             <video autoplay loop  src="./videos/3d47c346ad505c96ef0d2987ea972e76.mp4"></video>
-         </div>
+        <aside class="section-right">
+          <video
+            autoplay
+            muted
+            loop
+            src="./videos/3d47c346ad505c96ef0d2987ea972e76.mp4"
+          ></video>
+        </aside>
       </section>
 
-      <div class="offer"></div>
+      <div class="offer">
+        <button>
+          Get Matched Now <span>new</span>
+        </button>
+         <div class="offer-paragraph">
+            <p>
+              Tell us what you need and instantly get matched with world-class
+              talent ready to work on your project.
+            </p>
+          </div>
+      </div>
     </main>
   </body>
 </html>
