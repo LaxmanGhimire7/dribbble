@@ -208,6 +208,30 @@ main {
   background-color: #fff;
 }
 
+.popular{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.popular-button button{
+  gap: 20px;
+  margin-left: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: rgb(75, 73, 73);
+}
+
+.popular-button:hover{
+  cursor: pointer;
+}
+
+.popular-button button:hover{
+  background-color: rgb(243, 243, 243);
+}
+
 .banner {
   background-color: yellow;
   grid-area: banner;
@@ -245,8 +269,11 @@ main {
 .offer {
   background-color: royalblue;
   grid-area: offer;
-  margin-top: -60px;
+  margin: -60px auto 0 auto;
+  border-radius: 20px;
+  background-color: #F8F8FC;
   height: 70px;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
